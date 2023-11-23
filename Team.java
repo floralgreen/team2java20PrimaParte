@@ -5,6 +5,9 @@ public class Team {
         System.out.println("Federico, Carducci, 23, Frosinone," +
                 " Music, Pasta, Bloodborne, Arancia Meccaninca," +
                 " Uno Nessuno Centomila, Mokaccina");
+        System.out.println("Ivan, Piccioni, 28 , Roma" +
+                "videogiochi , Pasta , Dark Souls 3 , Lord of the rign"+
+                "lord of the ring, Athena");
 
        System.out.println("Stefano,Forcinito,33,Fabrica di Roma,Calcetto,Pizza,Fifa,Fast and Furius,Piccoli Brividi," +
                "Milo");
