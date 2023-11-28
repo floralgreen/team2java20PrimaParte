@@ -17,6 +17,16 @@ public class Team {
         System.out.println("Luigi, Mottola, 25, Lusciano, " +
                 "Table Top Gaming, Pizza, Killzone 2, The Lord of the Rings (Original Trilogy), " +
                 "The Lord of the Rings, Macchia");
+        System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");       System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
+                "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");
             
         System.out.println("Maria, Nappi, 27, Molfetta, gym, gelato, The Sims" +
                 "Indiana Jones, Mio nonno era un ciliegio, Cuoricino di panna");
