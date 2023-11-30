@@ -4,6 +4,9 @@ public class Team {
 
         Studente[] team = new Studente[5];
 
+        Studente federico = new Studente("Federico","Carducci", 23, "Ceprano", "Music", "Pasta", "Bloodborne", "Arancia Meccanica", "Uno Nessuno Centomila", "Mokaccina");
+
+        team[0] = federico;
 
         System.out.println("Ivan, Piccioni, 28 , Roma" +
                 "videogiochi , Pasta , Dark Souls 3 , Lord of the rign"+
@@ -11,10 +14,6 @@ public class Team {
 
         System.out.println("Stefano,Forcinito,33,Fabrica di Roma,Calcetto,Pizza,Fifa,Fast and Furius,Piccoli Brividi," +
                "Milo");
-
-        System.out.println("Federico, Carducci, 23, Frosinone," +
-                " Music, Pasta, Bloodborne, Arancia Meccaninca," +
-                " Uno Nessuno Centomila, Mokaccina");
 
         System.out.println("Luigi, Mottola, 25, Lusciano, " +
                 "Table Top Gaming, Pizza, Killzone 2, The Lord of the Rings (Original Trilogy), " +
