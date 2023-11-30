@@ -4,9 +4,13 @@ public class Team {
 
         Studente[] team = new Studente[5];
 
-        Studente federico = new Studente("Federico","Carducci", 23, "Ceprano", "Music", "Pasta", "Bloodborne", "Arancia Meccanica", "Uno Nessuno Centomila", "Mokaccina");
+        Studente federico = new Studente("Federico","Carducci", 23, "Ceprano",
+                "Music", "Pasta", "Bloodborne",
+                "Arancia Meccanica", "Uno Nessuno Centomila", "Mokaccina");
 
         team[0] = federico;
+
+        Studente.printLolPlayers(team);
 
         System.out.println("Ivan, Piccioni, 28 , Roma" +
                 "videogiochi , Pasta , Dark Souls 3 , Lord of the rign"+

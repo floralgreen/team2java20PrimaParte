@@ -2,8 +2,8 @@ public class Studente {
 
     public String nome;
     public String cognome;
-    public int età;
-    public String città;
+    public int eta;
+    public String citta;
     public String passatempo;
     public String ciboPreferito;
     public String videogiocoPreferito;
@@ -11,13 +11,13 @@ public class Studente {
     public String libroPreferito;
     public String nomeCucciolo;
 
-    public Studente(String nome, String cognome, int età, String città, String passatempo,
+    public Studente(String nome, String cognome, int eta, String citta, String passatempo,
                     String ciboPreferito, String videogiocoPreferito,
                     String filmPreferito, String libroPreferito, String nomeCucciolo){
         this.nome=nome;
         this.cognome=cognome;
-        this.età=età;
-        this.città=città;
+        this.eta=eta;
+        this.citta=citta;
         this.passatempo=passatempo;
         this.ciboPreferito=ciboPreferito;
         this.videogiocoPreferito=videogiocoPreferito;
@@ -34,12 +34,12 @@ public class Studente {
         return cognome;
     }
 
-    public int getEtà() {
-        return età;
+    public int getEta() {
+        return eta;
     }
 
-    public String getCittà() {
-        return città;
+    public String getCitta() {
+        return citta;
     }
 
     public String getPassatempo() {
@@ -74,12 +74,12 @@ public class Studente {
         this.cognome = cognome;
     }
 
-    public void setEtà(int età) {
-        this.età = età;
+    public void setEta(int eta) {
+        this.eta = eta;
     }
 
-    public void setCittà(String città) {
-        this.città = città;
+    public void setCitta(String citta) {
+        this.citta = citta;
     }
 
     public void setPassatempo(String passatempo) {
@@ -111,8 +111,8 @@ public class Studente {
         return "Studente{" +
                 "nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
-                ", età=" + età +
-                ", città='" + città + '\'' +
+                ", eta=" + eta +
+                ", citta='" + citta + '\'' +
                 ", passatempo='" + passatempo + '\'' +
                 ", ciboPreferito='" + ciboPreferito + '\'' +
                 ", videogiocoPreferito='" + videogiocoPreferito + '\'' +
@@ -120,6 +120,19 @@ public class Studente {
                 ", libroPreferito='" + libroPreferito + '\'' +
                 ", nomeCucciolo='" + nomeCucciolo + '\'' +
                 '}';
+    }
+
+    public static void printLolPlayers(Studente[] team) {
+        String lolGame = "LOL";
+        String leagueOfLegends = "League of Legends";
+
+        for (int i = 0; i < team.length ; i++) {
+            if(team[i] != null){
+                if(team[i].videogiocoPreferito == lolGame || team[i].videogiocoPreferito == leagueOfLegends){
+                    System.out.println(team[i].nome);
+                }
+            }
+        }
     }
 
 }
