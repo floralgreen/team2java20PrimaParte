@@ -1,15 +1,15 @@
 public class Studente {
 
-    public String nome;
-    public String cognome;
-    public int eta;
-    public String citta;
-    public String passatempo;
-    public String ciboPreferito;
-    public String videogiocoPreferito;
-    public String filmPreferito;
-    public String libroPreferito;
-    public String nomeCucciolo;
+    private String nome;
+    private String cognome;
+    private int eta;
+    private String citta;
+    private String passatempo;
+    private String ciboPreferito;
+    private String videogiocoPreferito;
+    private String filmPreferito;
+    private String libroPreferito;
+    private String nomeCucciolo;
 
     public Studente(String nome, String cognome, int eta, String citta, String passatempo,
                     String ciboPreferito, String videogiocoPreferito,
@@ -122,13 +122,13 @@ public class Studente {
                 '}';
     }
 
-    public static void printLolPlayers(Studente[] team) {
+    public void printLolPlayers(Studente[] team) {
         String lolGame = "LOL";
         String leagueOfLegends = "League of Legends";
 
         for (int i = 0; i < team.length ; i++) {
-            if(team[i] != null){
-                if(team[i].videogiocoPreferito == lolGame || team[i].videogiocoPreferito == leagueOfLegends){
+            if(team[i] != null) {
+                if (team[i].videogiocoPreferito == lolGame || team[i].videogiocoPreferito == leagueOfLegends) {
                     System.out.println(team[i].nome);
                 }
             }
