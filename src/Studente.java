@@ -126,6 +126,18 @@ public class Studente {
             System.out.println("Nome: " + studente.nome + ", Cognome: " + studente.cognome + ", Età: " + studente.eta);
         }
     }
+    public void printLolPlayers(Studente[] team) {
+        String lolGame = "LOL";
+        String leagueOfLegends = "League of Legends";
+
+        for (int i = 0; i < team.length ; i++) {
+            if(team[i] != null) {
+                if (team[i].videogiocoPreferito == lolGame || team[i].videogiocoPreferito == leagueOfLegends) {
+                    System.out.println(team[i].nome);
+                }
+            }
+        }
+    }
     @Override
     public String toString() {
         return "Studente{" +
@@ -141,19 +153,5 @@ public class Studente {
                 ", nomeCucciolo='" + nomeCucciolo + '\'' +
                 '}';
     }
-
-    public void printLolPlayers(Studente[] team) {
-        String lolGame = "LOL";
-        String leagueOfLegends = "League of Legends";
-
-        for (int i = 0; i < team.length ; i++) {
-            if(team[i] != null) {
-                if (team[i].videogiocoPreferito == lolGame || team[i].videogiocoPreferito == leagueOfLegends) {
-                    System.out.println(team[i].nome);
-                }
-            }
-        }
-    }
-
 }
 

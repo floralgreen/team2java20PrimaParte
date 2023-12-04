@@ -22,7 +22,7 @@ public class Team {
 
 
         System.out.println("i dati dello studente  sono=" + team[3]);
-        studente1.membriConLoStessoNome();
+        studente1.membriConLoStessoNome(team);
         federico.printLolPlayers(team);
 
         maria.riordinaPerEta(team);
