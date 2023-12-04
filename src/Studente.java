@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Studente {
 
     private String nome;
@@ -117,6 +120,12 @@ public class Studente {
         }
     }
 
+    public void riordinaPerEta(Studente[] team) {
+        Arrays.sort(team, Comparator.comparingInt(studente -> studente.eta));
+        for (Studente studente : team) {
+            System.out.println("Nome: " + studente.nome + ", Cognome: " + studente.cognome + ", Età: " + studente.eta);
+        }
+    }
     @Override
     public String toString() {
         return "Studente{" +
