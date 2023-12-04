@@ -105,6 +105,17 @@ public class Studente {
     public void setNomeCucciolo(String nomeCucciolo) {
         this.nomeCucciolo = nomeCucciolo;
     }
+    public void membriConLoStessoNome(Studente[] team) {
+        for (int i = 0; i < team.length - 1; i++) {
+            for (int j = i + 1; j < team.length; j++) {
+                if (team[i].nome == team[j].nome) {
+                    System.out.println("Membri con lo stesso nome: " + team[i].nome);
+                } else {
+                    System.out.println("Nessun membro con lo stesso nome.");
+                }
+            }
+        }
+    }
 
     @Override
     public String toString() {
