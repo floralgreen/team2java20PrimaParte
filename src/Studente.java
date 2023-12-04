@@ -1,8 +1,11 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Studente {
 
     public String nome;
     public String cognome;
-    public int età;
+    public int eta;
     public String città;
     public String passatempo;
     public String ciboPreferito;
@@ -11,12 +14,12 @@ public class Studente {
     public String libroPreferito;
     public String nomeCucciolo;
 
-    public Studente(String nome, String cognome, int età, String città, String passatempo,
+    public Studente(String nome, String cognome, int eta, String città, String passatempo,
                     String ciboPreferito, String videogiocoPreferito,
                     String filmPreferito, String libroPreferito, String nomeCucciolo){
         this.nome=nome;
         this.cognome=cognome;
-        this.età=età;
+        this.eta=eta;
         this.città=città;
         this.passatempo=passatempo;
         this.ciboPreferito=ciboPreferito;
@@ -35,7 +38,7 @@ public class Studente {
     }
 
     public int getEtà() {
-        return età;
+        return eta;
     }
 
     public String getCittà() {
@@ -75,7 +78,7 @@ public class Studente {
     }
 
     public void setEtà(int età) {
-        this.età = età;
+        this.eta = eta;
     }
 
     public void setCittà(String città) {
@@ -106,12 +109,18 @@ public class Studente {
         this.nomeCucciolo = nomeCucciolo;
     }
 
+    public void riordinaPerEta(Studente[] team) {
+        Arrays.sort(team, Comparator.comparingInt(studente -> studente.eta));
+        for (Studente studente : team) {
+            System.out.println("Nome: " + studente.nome + ", Cognome: " + studente.cognome + ", Età: " + studente.eta);
+        }
+    }
     @Override
     public String toString() {
         return "Studente{" +
                 "nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
-                ", età=" + età +
+                ", età=" + eta +
                 ", città='" + città + '\'' +
                 ", passatempo='" + passatempo + '\'' +
                 ", ciboPreferito='" + ciboPreferito + '\'' +
