@@ -106,6 +106,14 @@ public class Studente {
         this.nomeCucciolo = nomeCucciolo;
     }
 
+    //Pet printing method
+    public void petPrinter(Studente[] team){
+      if (nomeCucciolo != null){
+          System.out.println("The owner's name is: " + nome + " " + cognome + "\n" +
+                 "The pet's name is: " + nomeCucciolo);
+      }
+    }
+
     @Override
     public String toString() {
         return "Studente{" +
