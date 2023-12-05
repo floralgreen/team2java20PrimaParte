@@ -4,10 +4,12 @@ public class Team {
 
     public static void main(String[] args) {
 
+        //Object Student
         Studente[] team = new Studente[5];
+
         Studente ivan = new Studente("Ivan","Piccioni",28,"Roma",
-                "Videogiochi","Pasta", "DarkSouls3",
-                "LordofTheRing", "LordOfTheRing","Athena");
+                "Videogiochi","Pasta", "Dark Souls3",
+                "Lord of The Ring", "Lord of the Ring","Athena");
 
         Studente maria = new Studente("Maria", "Nappi", 27, "Molfetta"
                 , "gym", "gelato", " The Sims", "Indiana Jones", "Mio nonno era un ciliegio", "Cuoricino di panna");
@@ -22,12 +24,11 @@ public class Team {
                 "The Lord of the Rings (Original Trilogy)","The Lord of the Rings",
                 "Macchia");
 
+         //Array position
         team[0] = federico;
         team[1] = maria;
         team[2] = luigi;
         team[3] = ivan;
-
-
 
         //Method
         luigi.petPrinter(team);
