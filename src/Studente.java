@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Studente {
 
     private String nome;
@@ -105,6 +108,8 @@ public class Studente {
     public void setNomeCucciolo(String nomeCucciolo) {
         this.nomeCucciolo = nomeCucciolo;
     }
+
+    //Same Name Teammate printer method
     public void membriConLoStessoNome(Studente[] team) {
         for (int i = 0; i < team.length - 1; i++) {
             for (int j = i + 1; j < team.length; j++) {
@@ -125,12 +130,17 @@ public class Studente {
       }
     }
 
+    //Age Sorting method
     public void riordinaPerEta(Studente[] team) {
         Arrays.sort(team, Comparator.comparingInt(studente -> studente.eta));
         for (Studente studente : team) {
-            System.out.println("Nome: " + studente.nome + ", Cognome: " + studente.cognome + ", Età: " + studente.eta);
+            if (studente != null){
+                System.out.println("Nome: " + studente.nome + ", Cognome: " + studente.cognome + ", Età: " + studente.eta);
+            }
         }
     }
+
+    //LOL Scum Player Shamer method
     public void printLolPlayers(Studente[] team) {
         String lolGame = "LOL";
         String leagueOfLegends = "League of Legends";
