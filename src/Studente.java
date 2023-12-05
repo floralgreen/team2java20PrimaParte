@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class Studente {
 
     private String nome;
@@ -118,6 +115,14 @@ public class Studente {
                 }
             }
         }
+    }
+
+    //Pet printing method
+    public void petPrinter(Studente[] team){
+      if (nomeCucciolo != null){
+          System.out.println("The owner's name is: " + nome + " " + cognome + "\n" +
+                 "The pet's name is: " + nomeCucciolo);
+      }
     }
 
     public void riordinaPerEta(Studente[] team) {
